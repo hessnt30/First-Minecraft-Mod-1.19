@@ -12,11 +12,12 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, FirstMod.MOD_ID);
 
-    public static final RegistryObject<Item> ALUMINIUM =
-            ITEMS.register("aluminium", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-
-    public static final RegistryObject<Item> RAW_ALUMINIUM =
-            ITEMS.register("raw_aluminium", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    // Talconite ingot
+    public static final RegistryObject<Item> TALCONITE_INGOT =
+            ITEMS.register("talconite_ingot", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    // Raw talconite
+    public static final RegistryObject<Item> RAW_TALCONITE_INGOT =
+            ITEMS.register("raw_talconite", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
 
 
 

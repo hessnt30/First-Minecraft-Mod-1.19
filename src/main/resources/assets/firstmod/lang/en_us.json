@@ -1,4 +1,8 @@
 {
-  "item.firstmod.aluminium:":"Aluminium",
-  "item.firstmod.raw_aluminium:":"Raw Aluminium"
+  "item.firstmod.talconite_ingot:": "Talconite Ingot",
+  "item.firstmod.raw_talconite:": "Raw Talconite",
+
+  "block.firstmod.talconite_block": "Block of Talconite",
+  "block.firstmod.talconite_ore_block": "Talconite Ore",
+  "block.firstmod.deepslate_talconite_ore_block": "Deepslate Talconite Ore"
 }

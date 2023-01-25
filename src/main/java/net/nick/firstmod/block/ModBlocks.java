@@ -14,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nick.firstmod.FirstMod;
+import net.nick.firstmod.block.custom.JumpyBlock;
 import net.nick.firstmod.item.ModCreativeModeTab;
 import net.nick.firstmod.item.ModItems;
 
@@ -34,6 +35,10 @@ public class ModBlocks {
     // Deepslate Talconite Ore Block
     public static final RegistryObject<Block> DEEPSLATE_TALCONITE_ORE_BLOCK = registerBlock("deepslate_talconite_ore_block",
             () -> new DropExperienceBlock((BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), UniformInt.of(3,7)),
+            ModCreativeModeTab.FIRSTMOD_TAB);
+    // Jumpy Block
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
+            () -> new JumpyBlock((BlockBehaviour.Properties.of(Material.AMETHYST).strength(6f).requiresCorrectToolForDrops())),
             ModCreativeModeTab.FIRSTMOD_TAB);
 
 

@@ -7,5 +7,7 @@
 
   "block.firstmod.talconite_block": "Block of Talconite",
   "block.firstmod.talconite_ore_block": "Talconite Ore",
-  "block.firstmod.deepslate_talconite_ore_block": "Deepslate Talconite Ore"
+  "block.firstmod.deepslate_talconite_ore_block": "Deepslate Talconite Ore",
+
+  "block.firstmod.jumpy_block": "Jumpy Block"
 }

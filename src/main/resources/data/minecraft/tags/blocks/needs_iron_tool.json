@@ -3,6 +3,7 @@
   "values": [
     "firstmod:talconite_ore_block",
     "firstmod:deepslate_talconite_ore_block",
-    "firstmod:talconite_block"
+    "firstmod:talconite_block",
+    "firstmod:jumpy_block"
   ]
 }

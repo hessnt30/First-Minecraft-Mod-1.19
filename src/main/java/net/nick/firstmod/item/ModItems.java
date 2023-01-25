@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nick.firstmod.FirstMod;
+import net.nick.firstmod.item.custom.EightBallItem;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -14,10 +15,13 @@ public class ModItems {
 
     // Talconite ingot
     public static final RegistryObject<Item> TALCONITE_INGOT =
-            ITEMS.register("talconite_ingot", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+            ITEMS.register("talconite_ingot", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FIRSTMOD_TAB)));
     // Raw talconite
-    public static final RegistryObject<Item> RAW_TALCONITE_INGOT =
-            ITEMS.register("raw_talconite", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MATERIALS)));
+    public static final RegistryObject<Item> RAW_TALCONITE =
+            ITEMS.register("raw_talconite", () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FIRSTMOD_TAB)));
+    // Raw talconite
+    public static final RegistryObject<Item> EIGHT_BALL =
+            ITEMS.register("eight_ball", () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.FIRSTMOD_TAB).stacksTo(1)));
 
 
 

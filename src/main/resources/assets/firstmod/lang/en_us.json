@@ -1,6 +1,9 @@
 {
-  "item.firstmod.talconite_ingot:": "Talconite Ingot",
-  "item.firstmod.raw_talconite:": "Raw Talconite",
+  "item.firstmod.talconite_ingot": "Talconite Ingot",
+  "item.firstmod.raw_talconite": "Raw Talconite",
+  "item.firstmod.eight_ball": "Eight Ball",
+
+  "itemGroup.firstmodtab": "First Mod",
 
   "block.firstmod.talconite_block": "Block of Talconite",
   "block.firstmod.talconite_ore_block": "Talconite Ore",

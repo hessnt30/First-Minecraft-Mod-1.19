@@ -29,7 +29,7 @@ displayName="First Mod" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks for this example mod goes to Java" #optional
+credits="Thank you to my girlfriend and to my brother" #optional
 # A text field displayed in the mod UI
 authors="hittermcgee" #optional
 # Display Test controls the display for your mod in the server connection screen
@@ -42,9 +42,9 @@ authors="hittermcgee" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Will this be of which I wish it to become?
+This is a simple mod that I will use as a basis for mods that will come in the future.
 
-The lady will fall and find out from below.
+I will use various ideas from different people and implement them into my favorite game, Minecraft.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.firstmod]] #optional

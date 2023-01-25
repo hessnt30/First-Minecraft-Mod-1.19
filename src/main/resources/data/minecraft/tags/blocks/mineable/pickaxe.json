@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "firstmod:talconite_ore_block",
+    "firstmod:talconite_block",
+    "firstmod:deepslate_talconite_ore_block"
+  ]
+}

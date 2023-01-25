@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "talconite_ingot",
+  "ingredient": {
+    "item": "firstmod:talconite_ore_block"
+  },
+  "result": "firstmod:talconite_ingot"
+}

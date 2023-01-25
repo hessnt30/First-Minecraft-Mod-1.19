@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firstmod:talconite_block"
+    }
+  ],
+  "result": {
+    "item": "firstmod:talconite_ingot",
+    "count": 9
+  }
+}

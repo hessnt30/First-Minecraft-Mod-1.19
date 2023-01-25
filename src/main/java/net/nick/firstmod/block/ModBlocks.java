@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,6 +14,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nick.firstmod.FirstMod;
+import net.nick.firstmod.item.ModCreativeModeTab;
 import net.nick.firstmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -23,16 +25,16 @@ public class ModBlocks {
 
     // Talconite Block
     public static final RegistryObject<Block> TALCONITE_BLOCK = registerBlock("talconite_block",
-            () -> new Block((BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(1f).requiresCorrectToolForDrops())),
-            CreativeModeTab.TAB_MATERIALS);
+            () -> new Block((BlockBehaviour.Properties.of(Material.STONE).strength(6f).sound(SoundType.METAL).requiresCorrectToolForDrops())),
+            ModCreativeModeTab.FIRSTMOD_TAB);
     // Talconite Ore Block
     public static final RegistryObject<Block> TALCONITE_ORE_BLOCK = registerBlock("talconite_ore_block",
             () -> new DropExperienceBlock((BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), UniformInt.of(3,7)),
-            CreativeModeTab.TAB_MATERIALS);
+            ModCreativeModeTab.FIRSTMOD_TAB);
     // Deepslate Talconite Ore Block
     public static final RegistryObject<Block> DEEPSLATE_TALCONITE_ORE_BLOCK = registerBlock("deepslate_talconite_ore_block",
             () -> new DropExperienceBlock((BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), UniformInt.of(3,7)),
-            CreativeModeTab.TAB_MATERIALS);
+            ModCreativeModeTab.FIRSTMOD_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){

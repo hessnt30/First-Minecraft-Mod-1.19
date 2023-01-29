@@ -1,12 +1,11 @@
 package net.nick.firstmod.block;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -36,6 +35,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_TALCONITE_ORE_BLOCK = registerBlock("deepslate_talconite_ore_block",
             () -> new DropExperienceBlock((BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), UniformInt.of(3,7)),
             ModCreativeModeTab.FIRSTMOD_TAB);
+    // White Flower Pot
+    //public static final RegistryObject<Block> WHITE_FLOWER_POT = registerBlock("white_flower_pot",
+    //        () -> new FlowerPotBlock(null, DEEPSLATE_TALCONITE_ORE_BLOCK, ));
     // Jumpy Block
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block",
             () -> new JumpyBlock((BlockBehaviour.Properties.of(Material.AMETHYST).strength(6f).requiresCorrectToolForDrops())),

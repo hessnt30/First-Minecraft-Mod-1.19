@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firstmod:dough"
+    },
+    {
+      "item": "firstmod:tomato_sauce"
+    },
+    {
+      "item": "firstmod:meatballs"
+    }
+  ],
+  "result": {
+    "item": "firstmod:spaghetti_with_meatballs"
+  }
+}

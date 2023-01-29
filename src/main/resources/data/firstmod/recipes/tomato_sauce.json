@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firstmod:tomato"
+    }
+  ],
+  "result": {
+    "item": "firstmod:tomato_sauce",
+    "count": 3
+  }
+}

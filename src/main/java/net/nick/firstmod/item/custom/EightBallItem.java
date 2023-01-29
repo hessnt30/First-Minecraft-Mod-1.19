@@ -6,6 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -23,10 +24,14 @@ public class EightBallItem extends Item {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
         if(!level.isClientSide() && hand == InteractionHand.MAIN_HAND) {
-            outputRandomNumber(player);
+            outputRandomNumber(player, 10);
+            player.setForcedPose(Pose.USING_TONGUE);
             player.getCooldowns().addCooldown(this, 20);
         }
-
+        else if(!level.isClientSide() && hand == InteractionHand.OFF_HAND && player.isCrouching()){
+            outputRandomNumber(player, 100);
+            player.setForcedPose(Pose.FALL_FLYING);
+        }
 
         return super.use(level, player, hand);
     }
@@ -43,11 +48,11 @@ public class EightBallItem extends Item {
         super.appendHoverText(itemStack, level, components, tooltipFlag);
     }
 
-    private void outputRandomNumber(Player player){
-        player.sendSystemMessage(Component.literal("Your Number is " + getRandomNumber()));
+    private void outputRandomNumber(Player player, int max){
+        player.sendSystemMessage(Component.literal("Your Number is " + getRandomNumber(max)));
     }
 
-    private int getRandomNumber(){
-        return RandomSource.createNewThreadLocalInstance().nextInt(10);
+    private int getRandomNumber(int max){
+        return RandomSource.createNewThreadLocalInstance().nextInt(max);
     }
 }
